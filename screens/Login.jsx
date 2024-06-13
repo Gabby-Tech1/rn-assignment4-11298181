@@ -15,9 +15,9 @@ const Login = ({navigation}) => {
             <Text style={{fontSize: 28, fontWeight: "bold", paddingTop: 5}}>Welcome Back 👋</Text>
             <Text style={{color: "gray", fontSize: 14}}>Let's log in. Apply for jobs!</Text>
         </View>
-        <View style={styles.InputContainer}>
+        <View style={styles.InputContainer}> 
           <TextInput value={name} onChange={(e)=> setName(e.target.value)} placeholder='Name' style={styles.input}/>
-          <TextInput value={email} onChange={(e)=> setEmail(e.target.valu)} placeholder='Email' style={styles.input}/>
+          <TextInput value={email} onChange={(e)=> setEmail(e.target.value)} placeholder='Email' style={styles.input}/>
           <TouchableOpacity style={styles.logInButton} onPress={()=> navigation.navigate('Home', {name, email})}>
             <Text style={styles.logInButtonText}>Log in</Text>
           </TouchableOpacity>
