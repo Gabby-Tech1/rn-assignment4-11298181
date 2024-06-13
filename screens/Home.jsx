@@ -50,7 +50,7 @@ const Home = ({route}) => {
   }
 
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: "white"}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: "#FAFAFD"}}>
       <ScrollView>
       <View style={styles.container}>
         <View style={{display: "flex", flexDirection: "column"}}>

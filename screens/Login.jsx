@@ -9,7 +9,7 @@ const Login = ({navigation}) => {
   const [email, setEmail] = useState("")
 
   return (
-    <SafeAreaView style={{backgroundColor: "white", flex: 1}}>
+    <SafeAreaView style={{backgroundColor: "#FAFAFD", flex: 1}}>
         <View style={styles.container}>
             <Text style={{fontSize: 22, fontWeight: "bold", color: "#356899"}}>Jobizz</Text>
             <Text style={{fontSize: 28, fontWeight: "bold", paddingTop: 5}}>Welcome Back 👋</Text>
