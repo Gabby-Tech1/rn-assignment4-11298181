@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, SafeAreaView, TextInput, Button, Image, TouchableHighlight, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView, TextInput, Button, Image, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import Apple from '../assets/apple.png'
 import Google from '../assets/google.png'
@@ -16,12 +16,11 @@ const Login = ({navigation}) => {
             <Text style={{color: "gray", fontSize: 14}}>Let's log in. Apply for jobs!</Text>
         </View>
         <View style={styles.InputContainer}> 
-          <TextInput value={name} onChange={(e)=> setName(e.target.value)} placeholder='Name' style={styles.input}/>
-          <TextInput value={email} onChange={(e)=> setEmail(e.target.value)} placeholder='Email' style={styles.input}/>
+          <TextInput value={name} onChangeText={setName} placeholder='Name' style={styles.input}/>
+          <TextInput value={email} onChangeText={setEmail} placeholder='Email' style={styles.input}/>
           <TouchableOpacity style={styles.logInButton} onPress={()=> navigation.navigate('Home', {name, email})}>
             <Text style={styles.logInButtonText}>Log in</Text>
           </TouchableOpacity>
-          
         </View>
         <View>
           <Text style={{color: "gray", fontSize: 14, textAlign: "center", paddingTop: 80}}>
@@ -29,15 +28,15 @@ const Login = ({navigation}) => {
           </Text>
         </View>
         <View style={styles.images}>
-          <TouchableHighlight>
+          <TouchableOpacity>
             <Image source={Apple} style={{width: 100, height: 100}}/>
-          </TouchableHighlight>
-          <TouchableHighlight>
+          </TouchableOpacity>
+          <TouchableOpacity>
             <Image source={Google} style={{width: 100, height: 100}}/>
-          </TouchableHighlight>
-          <TouchableHighlight>
+          </TouchableOpacity>
+          <TouchableOpacity>
             <Image source={Facebook} style={{width: 100, height: 100}}/>
-          </TouchableHighlight>
+          </TouchableOpacity>
         </View>
         <Text style={{textAlign: "center", paddingTop: 30, color: "gray"}}>Don't have an account? <Text style={{color: "#356899", fontWeight: "600"}}>Register</Text></Text>
     </SafeAreaView>

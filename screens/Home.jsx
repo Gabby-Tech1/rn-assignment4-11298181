@@ -54,8 +54,8 @@ const Home = ({route}) => {
       <ScrollView>
       <View style={styles.container}>
         <View style={{display: "flex", flexDirection: "column"}}>
-          <Text style={{fontSize: 24, fontWeight: "600"}}> Welcome {name}</Text>
-          <Text style={{color: "gray", }}>hi {email}</Text>
+          <Text style={{fontSize: 24, fontWeight: "600"}}>{name}</Text>
+          <Text style={{color: "gray", }}>{email}</Text>
         </View>
         <Image source={Profile} style={{width: 60, height: 60}}/>
       </View>
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
       alignItems: "center",
       paddingHorizontal: 20,
       paddingVertical: 20,
-      backgroundColor: "white"
+      backgroundColor: "#FAFAFD"
     },
     search: {
       display: "flex",
