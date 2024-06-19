@@ -1,10 +1,9 @@
-import { FlatList, Image, SafeAreaView, StyleSheet, Text, TextInput, View } from 'react-native'
+import { FlatList, Image, SafeAreaView, StyleSheet, Text, TextInput, View, ScrollView } from 'react-native'
 import React from 'react'
 import Profile from '../assets/profile.png'
 import Search from '../assets/search.png'
 import Filter from '../assets/filter.png'
 import JobCards from '../components/JobCards'
-import { ScrollView } from 'react-native-gesture-handler'
 import PopularJobs from '../components/PopularJobs'
 
 
